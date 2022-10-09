@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			An Example Form
+		</title> 
+	</head>
+	<body>
+		<h1>
+			An Example Form <br />
+		</h1>
+		<h3>
+			Feel free to play around with the form controls!
+		</h3>
+		<form action="Submitted.html" method="post">
+			<fieldset>
+				<legend>
+					Your Info:
+				</legend>
+				<label>
+					Name:
+					<input type="text" name="name" size="30" maxlength="100">
+				</label>
+				<br />
+				<label>
+					Date of Birth:
+					<input type="date" name="dob">
+					<br />
+				</label>
+				<label>
+					Email:
+					<input type="email" name="email" size="30" maxlength="30">
+				</label>
+				<br />
+				<label>
+					Phone Number:
+					<input type="text" name="phone" size="10" maxlength="10">
+				</label>
+			</fieldset>
+			<br />
+			<fieldset>
+				<legend>
+					Login
+				</legend>
+				<label>
+					Username:
+					<input type="text" name="user" size="30" maxlength="30">
+				</label>
+				<br />
+				<label>
+					Password:
+					<input type="password" name="password" size="30" maxlength="30">
+				</label>
+			</fieldset>
+			<br />
+			<fieldset>
+				<legend>
+					Form Control Tests:
+				</legend>
+				<label>
+					How well does this statement suit you? <br />
+					<b>"I enjoy this picture of a duck on a skateboard."</b> <br />
+					<img src="duck_skateboard.jpg" height="200" width="150"> <br />
+					<input type="radio" name="picture" value="strong_agree" checked="checked" /> Strongly Agree
+					<input type="radio" name="picture" value="agree" />Agree
+					<input type="radio" name="picture" value="disagree"/>Disagree
+					<input type="radio" name="picture" value="strong_disagree"/> Strongly Disagree
+				</label>
+				<br />
+				<label>
+					<br />What type of phone do you use? <br />
+					<select name="phone_type">
+						<option value="iphone"> iPhone/IOS</option>
+						<option value="android">Android</option>
+						<option value=""google">Google/Chrome OS</option>
+						<option value="other">Other</option>
+					</select>
+				</label>
+				<br /> <br />
+				<label>
+					Upload File <br />
+					<input type="file" name="file"> <br />
+					<input type="submit" name="upload">
+					 Or click this button 
+					<input type="image" src="Submit_button.jpg" align="center">
+				</label>
+			</fieldset>
+		</form>
+	</body>
+</html>
